@@ -19,7 +19,7 @@ def checkout(request):
 class HomeView(ListView):
     model = Item
     template_name = 'home.html'
-
+    paginate_by = 10
 
 class ItemDetailView(DetailView):
     model = Item
